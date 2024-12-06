@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Honeypot - Logs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .log-container {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            height: 600px;
+            overflow-y: auto;
+        }
+        .log-line {
+            margin: 0;
+            padding: 2px 0;
+            border-bottom: 1px solid #333;
+        }
+        .log-line:hover {
+            background-color: #2d2d2d;
+        }
+        .log-warning {
+            color: #ffd700;
+        }
+        .log-error {
+            color: #ff6b6b;
+        }
+        .log-info {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Honeypot Dashboard</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="{{ url_for('dashboard') }}">Dashboard</a>
+                <a class="nav-link active" href="{{ url_for('view_logs') }}">Logs</a>
+                <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col">
+                <div class="btn-group" role="group">
+                    <a href="{{ url_for('view_logs', type='all') }}" 
+                       class="btn btn-{{ 'primary' if current_type == 'all' else 'outline-primary' }}">
+                        All Logs
+                    </a>
+                    <a href="{{ url_for('view_logs', type='system') }}" 
+                       class="btn btn-{{ 'primary' if current_type == 'system' else 'outline-primary' }}">
+                        System
+                    </a>
+                    <a href="{{ url_for('view_logs', type='access') }}" 
+                       class="btn btn-{{ 'primary' if current_type == 'access' else 'outline-primary' }}">
+                        Access
+                    </a>
+                    <a href="{{ url_for('view_logs', type='api') }}" 
+                       class="btn btn-{{ 'primary' if current_type == 'api' else 'outline-primary' }}">
+                        API
+                    </a>
+                    <a href="{{ url_for('view_logs', type='attacks') }}" 
+                       class="btn btn-{{ 'primary' if current_type == 'attacks' else 'outline-primary' }}">
+                        Attacks
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4 class="mb-0">
+                            {% if current_type == 'all' %}
+                                All Logs
+                            {% else %}
+                                {{ current_type|title }} Logs
+                            {% endif %}
+                        </h4>
+                        <button class="btn btn-sm btn-outline-secondary" onclick="refreshLogs()">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh
+                        </button>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="log-container">
+                            {% if current_type == 'all' or current_type == 'system' %}
+                            <div class="mb-3">
+                                <h5 class="text-light p-2">System Logs</h5>
+                                {% for line in logs.system %}
+                                <pre class="log-line">{{ line }}</pre>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            {% if current_type == 'all' or current_type == 'access' %}
+                            <div class="mb-3">
+                                <h5 class="text-light p-2">Access Logs</h5>
+                                {% for line in logs.access %}
+                                <pre class="log-line">{{ line }}</pre>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            {% if current_type == 'all' or current_type == 'api' %}
+                            <div class="mb-3">
+                                <h5 class="text-light p-2">API Logs</h5>
+                                {% for line in logs.api %}
+                                <pre class="log-line">{{ line }}</pre>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            {% if current_type == 'all' or current_type == 'attacks' %}
+                            <div class="mb-3">
+                                <h5 class="text-light p-2">Attack Logs</h5>
+                                {% for line in logs.attacks %}
+                                <pre class="log-line">{{ line }}</pre>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function refreshLogs() {
+            location.reload();
+        }
+
+        // Scroll to bottom of log container
+        document.addEventListener('DOMContentLoaded', function() {
+            const logContainers = document.querySelectorAll('.log-container');
+            logContainers.forEach(container => {
+                container.scrollTop = container.scrollHeight;
+            });
+        });
+
+        // Auto-refresh every 30 seconds
+        setInterval(refreshLogs, 30000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # Honeypot SSH Server
+  ssh-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.ssh
+    ports:
+      - "22:22"
+    volumes:
+      - ./ssh_logs:/var/log/ssh
+    networks:
+      - honeypot-network
+
+  # Honeypot API Service
+  honeypot-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.honeypot
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logs:/app/logs
+      - ./analysis_data:/app/analysis_data
+      - ./ssh_logs:/app/ssh_logs
+    environment:
+      - FLASK_ENV=production
+      - LOG_LEVEL=INFO
+    depends_on:
+      - ssh-server
+    networks:
+      - honeypot-network
+
+  # Analysis Service
+  analysis-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.analysis
+    volumes:
+      - ./analysis_data:/app/analysis_data
+      - ./ssh_logs:/app/ssh_logs
+    depends_on:
+      - honeypot-api
+    networks:
+      - honeypot-network
+
+  # Frontend Next.js Dashboard
+  frontend:
+    build:
+      context: ./honeypot-dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://honeypot-api:5000
+    depends_on:
+      - honeypot-api
+    networks:
+      - honeypot-network
+
+networks:
+  honeypot-network:
+    driver: bridge

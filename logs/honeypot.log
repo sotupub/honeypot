@@ -1,0 +1,165 @@
+2024-12-05 20:36:25,716 - honeypot - INFO - Database initialized
+2024-12-05 20:36:25,719 - honeypot - INFO - Honeypot server initialized
+2024-12-05 20:36:25,719 - honeypot - INFO - Honeypot started on 0.0.0.0:2222
+2024-12-05 20:39:25,289 - honeypot - INFO - Database initialized
+2024-12-05 20:39:25,290 - honeypot - INFO - Honeypot server initialized
+2024-12-05 20:39:25,291 - honeypot - ERROR - Server error: name 'HONEYPOT_PORT' is not defined
+2024-12-05 20:39:25,291 - honeypot - INFO - Stopping honeypot...
+2024-12-05 20:39:25,291 - honeypot - INFO - Honeypot stopped
+2024-12-05 20:39:35,038 - honeypot - INFO - Database initialized
+2024-12-05 20:39:35,039 - honeypot - INFO - Honeypot server initialized
+2024-12-05 20:39:35,040 - honeypot - ERROR - Server error: name 'HONEYPOT_PORT' is not defined
+2024-12-05 20:39:35,042 - honeypot - INFO - Stopping honeypot...
+2024-12-05 20:39:35,042 - honeypot - INFO - Honeypot stopped
+2024-12-05 20:40:29,665 - honeypot - INFO - Database initialized
+2024-12-05 20:40:29,686 - honeypot - INFO - Honeypot server initialized
+2024-12-05 20:40:29,686 - honeypot - INFO - SSH Honeypot started on 0.0.0.0:2222
+2024-12-05 20:40:29,689 - honeypot - INFO - Started FTP service on port 21
+2024-12-05 20:40:29,690 - honeypot - INFO - Started SMTP service on port 25
+2024-12-05 20:40:29,690 - honeypot - INFO - Started HTTP service on port 80
+2024-12-05 20:40:29,690 - honeypot - INFO - Started vulnerable services
+2024-12-05 20:40:29,690 - honeypot - INFO - Started Telnet service on port 23
+2024-12-05 20:42:37,030 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:37,032 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:37,033 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:37,034 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:38,043 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:38,044 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:38,045 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:38,046 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:39,049 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:39,050 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:39,052 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:39,053 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:40,060 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:40,062 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:40,063 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:40,064 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:41,071 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:41,072 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:41,074 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:41,074 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:42,083 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:42,084 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:42,085 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:42,086 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:43,090 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:43,090 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:43,092 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:43,093 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:44,103 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:44,103 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:44,105 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:44,106 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:45,113 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:42:45,113 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:42:45,116 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
+2024-12-05 20:42:45,116 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:42,026 - honeypot - INFO - Database initialized
+2024-12-05 20:43:42,026 - honeypot - INFO - Honeypot server initialized
+2024-12-05 20:43:42,028 - honeypot - INFO - SSH Honeypot started on 0.0.0.0:2222
+2024-12-05 20:43:42,029 - honeypot - INFO - Started FTP service on port 21
+2024-12-05 20:43:42,029 - honeypot - INFO - Started SMTP service on port 25
+2024-12-05 20:43:42,031 - honeypot - INFO - Started vulnerable services
+2024-12-05 20:43:42,031 - honeypot - INFO - Started HTTP service on port 80
+2024-12-05 20:43:42,032 - honeypot - INFO - Started Telnet service on port 23
+2024-12-05 20:43:46,472 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:46,473 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:46,484 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:46,484 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: admin
+2024-12-05 20:43:46,484 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:47,494 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:47,494 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:47,504 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:47,504 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: admin
+2024-12-05 20:43:47,505 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:48,516 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:48,517 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:48,527 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:48,528 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: admin
+2024-12-05 20:43:48,528 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:49,534 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:49,535 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:49,545 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:49,545 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: root
+2024-12-05 20:43:49,545 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:50,558 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:50,558 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:50,565 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:50,566 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: root
+2024-12-05 20:43:50,567 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:51,567 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:51,568 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:51,579 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:51,579 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: root
+2024-12-05 20:43:51,580 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:52,595 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:52,596 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:52,604 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:52,604 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: user
+2024-12-05 20:43:52,605 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:53,619 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:53,619 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:53,630 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:53,630 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: user
+2024-12-05 20:43:53,631 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:54,638 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 20:43:54,638 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 20:43:54,649 - honeypot - WARNING - Attack detected from 127.0.0.1
+2024-12-05 20:43:54,650 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: user
+2024-12-05 20:43:54,651 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:48:29,679 - honeypot - INFO - SSH Honeypot listening on port 2222...
+2024-12-05 20:48:41,281 - honeypot - INFO - New connection from 127.0.0.1:41135
+2024-12-05 20:48:54,619 - honeypot - WARNING - Login attempt - Username: ubuntu, Password: 123456
+2024-12-05 20:49:03,568 - honeypot - WARNING - Login attempt - Username: ubuntu, Password: ubuntu
+2024-12-05 20:49:06,707 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T20:49:06.707149", "username": "ubuntu", "is_root": false, "command": "ls", "output": "ls: cannot access '.': No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-05 20:49:14,164 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T20:49:14.164827", "username": "ubuntu", "is_root": false, "command": "cat l", "output": "cat: l: No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-05 20:53:45,997 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T20:53:45.997035", "username": "ubuntu", "is_root": false, "command": "ls", "output": "ls: cannot access '.': No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-05 20:54:08,169 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T20:54:08.169834", "username": "ubuntu", "is_root": false, "command": "cat file", "output": "cat: file: No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-05 20:54:12,987 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T20:54:12.987500", "username": "ubuntu", "is_root": false, "command": "touch file", "output": "bash: touch: command not found", "working_dir": "/home/ubuntu"}
+2024-12-05 21:06:01,491 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T21:06:01.491586", "username": "ubuntu", "is_root": false, "command": "cat", "output": "usage: cat [file]", "working_dir": "/home/ubuntu"}
+2024-12-05 21:55:09,155 - honeypot - INFO - Database initialized
+2024-12-05 21:55:09,157 - honeypot - INFO - Honeypot server initialized
+2024-12-05 21:55:09,157 - honeypot - ERROR - Server error: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+2024-12-05 21:55:09,158 - honeypot - INFO - Stopping honeypot...
+2024-12-05 21:55:09,158 - honeypot - INFO - Honeypot stopped
+2024-12-05 21:56:00,172 - honeypot - INFO - Database initialized
+2024-12-05 21:56:00,175 - honeypot - INFO - Honeypot server initialized
+2024-12-05 21:56:00,175 - honeypot - INFO - SSH Honeypot started on 0.0.0.0:2222
+2024-12-05 21:56:00,176 - honeypot - INFO - Started FTP service on port 21
+2024-12-05 21:56:00,177 - honeypot - INFO - Started SMTP service on port 25
+2024-12-05 21:56:00,177 - honeypot - INFO - Started HTTP service on port 80
+2024-12-05 21:56:00,179 - honeypot - INFO - Started vulnerable services
+2024-12-05 21:56:00,179 - honeypot - INFO - Started Telnet service on port 23
+2024-12-05 21:58:23,747 - honeypot - INFO - New connection from 127.0.0.1
+2024-12-05 21:58:23,748 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
+2024-12-05 21:58:33,760 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 21:58:59,216 - honeypot - INFO - Stopping honeypot...
+2024-12-05 21:58:59,216 - honeypot - INFO - Honeypot stopped
+2024-12-06 00:13:40,137 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-06T00:13:40.137398", "username": "ubuntu", "is_root": false, "command": "cat", "output": "usage: cat [file]", "working_dir": "/home/ubuntu"}
+2024-12-06 00:17:19,544 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-06T00:17:19.544699", "username": "ubuntu", "is_root": false, "command": "ls", "output": "ls: cannot access '.': No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-06 00:17:21,445 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-06T00:17:21.445271", "username": "ubuntu", "is_root": false, "command": "ls", "output": "ls: cannot access '.': No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-06 00:33:03,699 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-06T00:33:03.699141", "username": "ubuntu", "is_root": false, "command": "ls", "output": "ls: cannot access '.': No such file or directory", "working_dir": "/home/ubuntu"}
+2024-12-06 00:33:17,287 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-06T00:33:17.287233", "username": "ubuntu", "is_root": false, "command": "pppppp", "output": "bash: pppppp: command not found", "working_dir": "/home/ubuntu"}
+2024-12-06 01:08:13,121 - honeypot - WARNING - IP 123.170.36.250 banned for 24 hours. Reason: Threat score exceeded threshold: 14
+2024-12-06 01:08:18,867 - honeypot - WARNING - IP 96.125.107.252 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:08:21,768 - honeypot - WARNING - IP 128.241.120.161 banned for 24 hours. Reason: Threat score exceeded threshold: 10
+2024-12-06 01:08:26,129 - honeypot - WARNING - IP 206.228.3.177 banned for 24 hours. Reason: Threat score exceeded threshold: 11
+2024-12-06 01:08:38,538 - honeypot - WARNING - IP 147.72.173.205 banned for 24 hours. Reason: Threat score exceeded threshold: 10
+2024-12-06 01:08:46,952 - honeypot - WARNING - IP 231.126.233.192 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:08:51,911 - honeypot - WARNING - IP 2.191.226.10 banned for 24 hours. Reason: Threat score exceeded threshold: 11
+2024-12-06 01:09:01,153 - honeypot - WARNING - IP 222.3.89.131 banned for 24 hours. Reason: Threat score exceeded threshold: 10
+2024-12-06 01:09:22,069 - honeypot - WARNING - IP 253.134.4.255 banned for 24 hours. Reason: Threat score exceeded threshold: 11
+2024-12-06 01:09:32,613 - honeypot - WARNING - IP 59.240.187.42 banned for 24 hours. Reason: Threat score exceeded threshold: 12
+2024-12-06 01:09:40,903 - honeypot - WARNING - IP 250.210.114.159 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:09:54,190 - honeypot - WARNING - IP 167.106.8.96 banned for 24 hours. Reason: Threat score exceeded threshold: 10
+2024-12-06 01:10:00,561 - honeypot - WARNING - IP 237.77.116.23 banned for 24 hours. Reason: Threat score exceeded threshold: 10
+2024-12-06 01:10:07,193 - honeypot - WARNING - IP 119.86.213.247 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:10:07,910 - honeypot - WARNING - IP 187.9.90.227 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:10:08,678 - honeypot - WARNING - IP 31.24.1.231 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:10:18,368 - honeypot - WARNING - IP 77.136.155.12 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:18:49,846 - honeypot - WARNING - IP 200.165.135.110 banned for 48 hours. Reason: Multiple COMMAND_INJECTION attempts
+2024-12-06 01:19:11,922 - honeypot - WARNING - IP 116.184.111.159 banned for 24 hours. Reason: Threat score exceeded threshold: 10
+2024-12-06 01:19:15,003 - honeypot - WARNING - IP 205.4.170.222 banned for 24 hours. Reason: Threat score exceeded threshold: 13
+2024-12-06 01:19:17,499 - honeypot - WARNING - IP 101.236.123.160 banned for 24 hours. Reason: Threat score exceeded threshold: 12
+2024-12-06 01:19:21,119 - honeypot - WARNING - IP 207.153.76.162 banned for 48 hours. Reason: Multiple COMMAND_INJECTION attempts

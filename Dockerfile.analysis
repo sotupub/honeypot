@@ -1,0 +1,29 @@
+# Use official Python image
+FROM python:3.9-slim-buster
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy analysis scripts and modules
+COPY analysis/ ./analysis/
+COPY config.py .
+COPY app.py .
+
+# Create necessary directories
+RUN mkdir -p /app/analysis_data /app/ssh_logs
+
+# Set environment variables
+ENV PYTHONPATH=/app
+
+# Run analysis service
+CMD ["python", "-m", "analysis.main"]
