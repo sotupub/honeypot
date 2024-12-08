@@ -50,6 +50,10 @@ body {
   @apply glass p-6;
 }
 
+.glass-card {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20;
+}
+
 /* Ocean Wave Animation */
 @keyframes wave {
   0% {
@@ -61,6 +65,26 @@ body {
   100% {
     transform: translateX(-50%) translateZ(0) scaleY(1);
   }
+}
+
+@keyframes wave-slow {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-15%) translateZ(0) scaleY(0.9);
+  }
+  100% {
+    transform: translateX(-30%) translateZ(0) scaleY(1);
+  }
+}
+
+.animate-wave {
+  animation: wave 7s infinite linear;
+}
+
+.animate-wave-slow {
+  animation: wave-slow 11s infinite linear;
 }
 
 .wave {
@@ -84,4 +108,62 @@ body {
   bottom: 0;
   animation: wave 20s -1s linear infinite;
   opacity: 0.025;
+}
+
+/* Ocean theme animations */
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.8);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) scale(2);
+    opacity: 0;
+  }
+}
+
+.wave-animation {
+  animation: wave 15s infinite linear;
+  transform-origin: center bottom;
+}
+
+.wave-animation-delayed {
+  animation: wave 20s infinite linear;
+  animation-delay: -5s;
+  transform-origin: center bottom;
+}
+
+.bubble-animation {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: bubble 8s infinite;
+  left: calc(random(100) * 1%);
+}
+
+.bubble-animation.delay-2 {
+  animation-delay: 2s;
+  left: calc(random(100) * 1%);
+}
+
+.bubble-animation.delay-4 {
+  animation-delay: 4s;
+  left: calc(random(100) * 1%);
 }

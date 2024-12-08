@@ -100,7 +100,7 @@ const AdvancedAnalysis = () => {
   useEffect(() => {
     const fetchAnalysis = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/analysis/full');
+        const response = await fetch('http://57.129.78.111:5000/api/analysis/full');
         if (!response.ok) {
           throw new Error('Failed to fetch analysis data');
         }

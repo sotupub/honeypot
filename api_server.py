@@ -519,4 +519,4 @@ def get_ssh_logs_alias():
     return get_ssh_logs_v2()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0')

@@ -40,20 +40,21 @@ export default function DashboardPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/dashboard');
-        if (!response.ok) throw new Error('Échec de la récupération des données du tableau de bord');
+        const response = await fetch('http://57.129.78.111:5000/api/dashboard');
+        if (!response.ok) throw new Error('Failed to fetch dashboard data');
         const jsonData = await response.json();
         setData(jsonData);
         setError(null);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Échec de la récupération des données du tableau de bord');
+        setError(err instanceof Error ? err.message : 'Failed to fetch dashboard data');
       } finally {
         setLoading(false);
       }
     };
 
     fetchData();
-    const interval = setInterval(fetchData, 5000); // Rafraîchir toutes les 5 secondes
+    // Refresh data every 30 seconds
+    const interval = setInterval(fetchData, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -61,7 +62,7 @@ export default function DashboardPage() {
   if (error) return <div>Erreur : {error}</div>;
   if (!data) return null;
 
-  return (
+    return (
     <div className="flex-1 space-y-4 p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <h2 className="text-3xl font-bold tracking-tight">Tableau de Bord de Sécurité du Honeypot</h2>
@@ -95,9 +96,9 @@ export default function DashboardPage() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
           
           <div className="col-span-12">
-            <SSHActivity />
-          </div>
-        </div>
+        <SSHActivity />
+      </div>
+      </div>
 
         {/* Add SSH Sessions component */}
         <SSHSessions />

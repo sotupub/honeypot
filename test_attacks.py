@@ -5,7 +5,7 @@ from ftplib import FTP
 import telnetlib
 import smtplib
 
-def test_ssh_attack(host='127.0.0.1', port=2222):
+def test_ssh_attack(host='57.129.78.111', port=2222):
     print("\n=== Test d'attaque SSH ===")
     try:
         # Simuler plusieurs tentatives de connexion SSH
@@ -32,7 +32,7 @@ def test_ssh_attack(host='127.0.0.1', port=2222):
     except Exception as e:
         print(f"Erreur SSH: {str(e)}")
 
-def test_ftp_attack(host='127.0.0.1', port=2121):
+def test_ftp_attack(host='57.129.78.111', port=2121):
     print("\n=== Test d'attaque FTP ===")
     try:
         # Test de la backdoor vsftpd
@@ -50,7 +50,7 @@ def test_ftp_attack(host='127.0.0.1', port=2121):
     except Exception as e:
         print(f"Erreur FTP: {str(e)}")
 
-def test_http_attack(host='127.0.0.1', port=8080):
+def test_http_attack(host='57.129.78.111', port=8080):
     print("\n=== Test d'attaque HTTP ===")
     try:
         # Test d'injection SQL
@@ -66,7 +66,7 @@ def test_http_attack(host='127.0.0.1', port=8080):
     except Exception as e:
         print(f"Erreur HTTP: {str(e)}")
 
-def test_telnet_attack(host='127.0.0.1', port=2323):
+def test_telnet_attack(host='57.129.78.111', port=2323):
     print("\n=== Test d'attaque Telnet ===")
     try:
         # Tentative avec des identifiants par défaut
@@ -86,7 +86,7 @@ def test_telnet_attack(host='127.0.0.1', port=2323):
     except Exception as e:
         print(f"Erreur Telnet: {str(e)}")
 
-def test_smtp_attack(host='127.0.0.1', port=2525):
+def test_smtp_attack(host='57.129.78.111', port=2525):
     print("\n=== Test d'attaque SMTP ===")
     try:
         # Test d'injection de commandes SMTP

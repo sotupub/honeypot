@@ -10,6 +10,7 @@ const Sidebar = () => {
     { href: '/', label: 'Tableau de Bord', icon: '🌊' },
     { href: '/attacks', label: 'Attaques', icon: '⚠️' },
     { href: '/ssh-logs', label: 'Journaux SSH', icon: '🔒' },
+    {href: '/login', label: 'Login', icon: '🧑‍💻'},
    
   ];
 

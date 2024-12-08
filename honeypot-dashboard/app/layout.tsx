@@ -1,12 +1,14 @@
-'use client';
-
-import './globals.css';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import './globals.css';
 import Sidebar from '@/components/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] });
 
-
+export const metadata: Metadata = {
+  title: 'Honeypot Dashboard',
+  description: 'Secure monitoring system',
+};
 
 export default function RootLayout({
   children,
@@ -14,16 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body className={inter.className}>
-        <div className="ocean-waves">
-          <div className="wave wave-1"></div>
-          <div className="wave wave-2"></div>
-          <div className="wave wave-3"></div>
-        </div>
         <div className="flex min-h-screen relative">
           <Sidebar />
-          <main className="flex-1 p-8 overflow-auto relative z-10">
+          <main className="flex-1 relative z-10 p-4">
             {children}
           </main>
         </div>

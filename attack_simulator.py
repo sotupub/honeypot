@@ -8,7 +8,7 @@ import logging
 from concurrent.futures import ThreadPoolExecutor
 
 class AttackSimulator:
-    def __init__(self, target_host="localhost", api_port=5000, ssh_port=22):
+    def __init__(self, target_host="57.129.78.111", api_port=5000, ssh_port=22):
         self.target_host = target_host
         self.api_port = api_port
         self.ssh_port = ssh_port
@@ -210,5 +210,5 @@ if __name__ == "__main__":
     )
     
     # Créer et lancer le simulateur
-    simulator = AttackSimulator(target_host="localhost", api_port=5000)
+    simulator = AttackSimulator(target_host="57.129.78.111", api_port=5000)
     simulator.run_attack_simulation(duration_minutes=10)  # Simulation de 10 minutes

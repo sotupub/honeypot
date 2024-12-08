@@ -18,7 +18,7 @@ const IDSStats = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/ids/stats');
+        const response = await fetch('http://57.129.78.111:5000/api/ids/stats');
         const data = await response.json();
         setStats(data);
       } catch (error) {

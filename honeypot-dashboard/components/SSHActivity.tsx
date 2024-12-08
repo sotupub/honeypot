@@ -41,7 +41,7 @@ export default function SSHActivity() {
   useEffect(() => {
     const fetchSSHStats = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/ssh/stats');
+        const response = await fetch('http://57.129.78.111:5000/api/ssh/stats');
         if (!response.ok) throw new Error('Failed to fetch SSH stats');
         const data = await response.json();
         setSSHStats(data);

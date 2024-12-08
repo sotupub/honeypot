@@ -12,7 +12,7 @@ export default function SSHLogsPage() {
   useEffect(() => {
     const fetchSSHLogs = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/ssh/logs');
+        const response = await fetch('http://57.129.78.111:5000/api/ssh/logs');
         if (!response.ok) {
           throw new Error('Échec de la récupération des journaux SSH');
         }

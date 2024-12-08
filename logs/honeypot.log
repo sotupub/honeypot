@@ -19,42 +19,42 @@
 2024-12-05 20:40:29,690 - honeypot - INFO - Started HTTP service on port 80
 2024-12-05 20:40:29,690 - honeypot - INFO - Started vulnerable services
 2024-12-05 20:40:29,690 - honeypot - INFO - Started Telnet service on port 23
-2024-12-05 20:42:37,030 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:37,032 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:37,033 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:37,034 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:38,043 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:38,044 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:38,045 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:38,046 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:39,049 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:39,050 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:39,052 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:39,053 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:40,060 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:40,062 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:40,063 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:40,064 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:41,071 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:41,072 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:41,074 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:41,074 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:42,083 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:42,084 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:42,085 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:42,086 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:43,090 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:43,090 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:43,092 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:43,093 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:44,103 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:44,103 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:44,105 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:44,106 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:42:45,113 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:42:45,113 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:42:45,116 - honeypot - ERROR - Error with connection from 127.0.0.1: table attacks has no column named attack_type
-2024-12-05 20:42:45,116 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:42:37,030 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:37,032 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:37,033 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:37,034 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:38,043 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:38,044 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:38,045 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:38,046 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:39,049 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:39,050 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:39,052 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:39,053 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:40,060 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:40,062 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:40,063 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:40,064 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:41,071 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:41,072 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:41,074 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:41,074 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:42,083 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:42,084 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:42,085 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:42,086 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:43,090 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:43,090 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:43,092 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:43,093 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:44,103 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:44,103 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:44,105 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:44,106 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:42:45,113 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:42:45,113 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:42:45,116 - honeypot - ERROR - Error with connection from 57.129.78.111: table attacks has no column named attack_type
+2024-12-05 20:42:45,116 - honeypot - INFO - Connection closed from 57.129.78.111
 2024-12-05 20:43:42,026 - honeypot - INFO - Database initialized
 2024-12-05 20:43:42,026 - honeypot - INFO - Honeypot server initialized
 2024-12-05 20:43:42,028 - honeypot - INFO - SSH Honeypot started on 0.0.0.0:2222
@@ -63,53 +63,53 @@
 2024-12-05 20:43:42,031 - honeypot - INFO - Started vulnerable services
 2024-12-05 20:43:42,031 - honeypot - INFO - Started HTTP service on port 80
 2024-12-05 20:43:42,032 - honeypot - INFO - Started Telnet service on port 23
-2024-12-05 20:43:46,472 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:46,473 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:46,484 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:46,484 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: admin
-2024-12-05 20:43:46,484 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:47,494 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:47,494 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:47,504 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:47,504 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: admin
-2024-12-05 20:43:47,505 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:48,516 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:48,517 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:48,527 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:48,528 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: admin
-2024-12-05 20:43:48,528 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:49,534 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:49,535 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:49,545 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:49,545 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: root
-2024-12-05 20:43:49,545 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:50,558 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:50,558 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:50,565 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:50,566 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: root
-2024-12-05 20:43:50,567 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:51,567 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:51,568 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:51,579 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:51,579 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: root
-2024-12-05 20:43:51,580 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:52,595 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:52,596 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:52,604 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:52,604 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: user
-2024-12-05 20:43:52,605 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:53,619 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:53,619 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:53,630 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:53,630 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: user
-2024-12-05 20:43:53,631 - honeypot - INFO - Connection closed from 127.0.0.1
-2024-12-05 20:43:54,638 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 20:43:54,638 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 20:43:54,649 - honeypot - WARNING - Attack detected from 127.0.0.1
-2024-12-05 20:43:54,650 - honeypot - INFO - Failed login attempt from 127.0.0.1 - User: user
-2024-12-05 20:43:54,651 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 20:43:46,472 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:46,473 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:46,484 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:46,484 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: admin
+2024-12-05 20:43:46,484 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:47,494 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:47,494 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:47,504 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:47,504 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: admin
+2024-12-05 20:43:47,505 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:48,516 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:48,517 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:48,527 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:48,528 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: admin
+2024-12-05 20:43:48,528 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:49,534 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:49,535 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:49,545 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:49,545 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: root
+2024-12-05 20:43:49,545 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:50,558 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:50,558 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:50,565 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:50,566 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: root
+2024-12-05 20:43:50,567 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:51,567 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:51,568 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:51,579 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:51,579 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: root
+2024-12-05 20:43:51,580 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:52,595 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:52,596 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:52,604 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:52,604 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: user
+2024-12-05 20:43:52,605 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:53,619 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:53,619 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:53,630 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:53,630 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: user
+2024-12-05 20:43:53,631 - honeypot - INFO - Connection closed from 57.129.78.111
+2024-12-05 20:43:54,638 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 20:43:54,638 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 20:43:54,649 - honeypot - WARNING - Attack detected from 57.129.78.111
+2024-12-05 20:43:54,650 - honeypot - INFO - Failed login attempt from 57.129.78.111 - User: user
+2024-12-05 20:43:54,651 - honeypot - INFO - Connection closed from 57.129.78.111
 2024-12-05 20:48:29,679 - honeypot - INFO - SSH Honeypot listening on port 2222...
-2024-12-05 20:48:41,281 - honeypot - INFO - New connection from 127.0.0.1:41135
+2024-12-05 20:48:41,281 - honeypot - INFO - New connection from 57.129.78.111:41135
 2024-12-05 20:48:54,619 - honeypot - WARNING - Login attempt - Username: ubuntu, Password: 123456
 2024-12-05 20:49:03,568 - honeypot - WARNING - Login attempt - Username: ubuntu, Password: ubuntu
 2024-12-05 20:49:06,707 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-05T20:49:06.707149", "username": "ubuntu", "is_root": false, "command": "ls", "output": "ls: cannot access '.': No such file or directory", "working_dir": "/home/ubuntu"}
@@ -131,9 +131,9 @@
 2024-12-05 21:56:00,177 - honeypot - INFO - Started HTTP service on port 80
 2024-12-05 21:56:00,179 - honeypot - INFO - Started vulnerable services
 2024-12-05 21:56:00,179 - honeypot - INFO - Started Telnet service on port 23
-2024-12-05 21:58:23,747 - honeypot - INFO - New connection from 127.0.0.1
-2024-12-05 21:58:23,748 - honeypot - DEBUG - Sent SSH banner to 127.0.0.1
-2024-12-05 21:58:33,760 - honeypot - INFO - Connection closed from 127.0.0.1
+2024-12-05 21:58:23,747 - honeypot - INFO - New connection from 57.129.78.111
+2024-12-05 21:58:23,748 - honeypot - DEBUG - Sent SSH banner to 57.129.78.111
+2024-12-05 21:58:33,760 - honeypot - INFO - Connection closed from 57.129.78.111
 2024-12-05 21:58:59,216 - honeypot - INFO - Stopping honeypot...
 2024-12-05 21:58:59,216 - honeypot - INFO - Honeypot stopped
 2024-12-06 00:13:40,137 - honeypot - WARNING - Command executed: {"timestamp": "2024-12-06T00:13:40.137398", "username": "ubuntu", "is_root": false, "command": "cat", "output": "usage: cat [file]", "working_dir": "/home/ubuntu"}
@@ -163,3 +163,24 @@
 2024-12-06 01:19:15,003 - honeypot - WARNING - IP 205.4.170.222 banned for 24 hours. Reason: Threat score exceeded threshold: 13
 2024-12-06 01:19:17,499 - honeypot - WARNING - IP 101.236.123.160 banned for 24 hours. Reason: Threat score exceeded threshold: 12
 2024-12-06 01:19:21,119 - honeypot - WARNING - IP 207.153.76.162 banned for 48 hours. Reason: Multiple COMMAND_INJECTION attempts
+2024-12-06 03:26:17,071 - honeypot - INFO - Database initialized
+2024-12-06 03:26:17,072 - honeypot - INFO - Honeypot server initialized
+2024-12-06 03:26:17,072 - honeypot - INFO - SSH Honeypot started on 0.0.0.0:2222
+2024-12-06 03:26:17,073 - honeypot - ERROR - Error in FTP service: [Errno 13] Permission denied
+2024-12-06 03:26:17,073 - honeypot - ERROR - Error in SMTP service: [Errno 13] Permission denied
+2024-12-06 03:26:17,074 - honeypot - ERROR - Error in HTTP service: [Errno 13] Permission denied
+2024-12-06 03:26:17,074 - honeypot - ERROR - Error in Telnet service: [Errno 13] Permission denied
+2024-12-06 03:26:17,074 - honeypot - INFO - Started vulnerable services
+2024-12-06 03:27:07,806 - honeypot - INFO - New connection from 160.157.77.154
+2024-12-06 03:27:07,807 - honeypot - DEBUG - Sent SSH banner to 160.157.77.154
+2024-12-06 03:27:17,817 - honeypot - INFO - Connection closed from 160.157.77.154
+2024-12-06 03:27:31,593 - honeypot - INFO - New connection from 160.157.77.154
+2024-12-06 03:27:31,593 - honeypot - DEBUG - Sent SSH banner to 160.157.77.154
+2024-12-06 03:27:41,608 - honeypot - INFO - Connection closed from 160.157.77.154
+2024-12-06 03:34:04,728 - honeypot - INFO - New connection from 160.157.77.154
+2024-12-06 03:34:04,730 - honeypot - DEBUG - Sent SSH banner to 160.157.77.154
+2024-12-06 03:34:14,742 - honeypot - INFO - Connection closed from 160.157.77.154
+2024-12-06 04:01:00,435 - honeypot - INFO - New connection from 47.83.8.164
+2024-12-06 04:01:00,436 - honeypot - DEBUG - Sent SSH banner to 47.83.8.164
+2024-12-06 04:01:00,436 - honeypot - ERROR - Error with connection from 47.83.8.164: 'utf-8' codec can't decode byte 0x89 in position 28: invalid start byte
+2024-12-06 04:01:00,436 - honeypot - INFO - Connection closed from 47.83.8.164

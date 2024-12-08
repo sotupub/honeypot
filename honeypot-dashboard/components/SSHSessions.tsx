@@ -25,7 +25,7 @@ export default function SSHSessions() {
   useEffect(() => {
     const fetchSessions = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/ssh/sessions');
+        const response = await fetch('http://57.129.78.111:5000/api/ssh/sessions');
         if (!response.ok) throw new Error('Failed to fetch SSH sessions');
         const data = await response.json();
         setSessions(data);

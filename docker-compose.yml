@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile.ssh
     ports:
-      - "22:22"
+      - "2222:22"
     volumes:
       - ./ssh_logs:/var/log/ssh
     networks:
@@ -32,18 +32,6 @@ services:
     networks:
       - honeypot-network
 
-  # Analysis Service
-  analysis-service:
-    build:
-      context: .
-      dockerfile: Dockerfile.analysis
-    volumes:
-      - ./analysis_data:/app/analysis_data
-      - ./ssh_logs:/app/ssh_logs
-    depends_on:
-      - honeypot-api
-    networks:
-      - honeypot-network
 
   # Frontend Next.js Dashboard
   frontend:

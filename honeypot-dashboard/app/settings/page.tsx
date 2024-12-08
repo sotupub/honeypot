@@ -25,7 +25,7 @@ export default function SettingsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/settings', {
+      const response = await fetch('http://57.129.78.111:5000/api/settings', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

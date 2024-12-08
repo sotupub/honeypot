@@ -16,7 +16,7 @@ export default function ThreatDetection() {
     const fetchThreatData = async () => {
       try {
         // Fetch threat data
-        const threatResponse = await fetch('http://localhost:5000/api/threats');
+        const threatResponse = await fetch('http://57.129.78.111:5000/api/threats');
         if (!threatResponse.ok) {
           throw new Error('Failed to fetch threat data');
         }
@@ -24,7 +24,7 @@ export default function ThreatDetection() {
         setThreatData(threatData);
 
         // Fetch banned IPs
-        const bannedIPsResponse = await fetch('http://localhost:5000/api/banned-ips');
+        const bannedIPsResponse = await fetch('http://57.129.78.111:5000/api/banned-ips');
         if (!bannedIPsResponse.ok) {
           throw new Error('Failed to fetch banned IPs');
         }
@@ -32,7 +32,7 @@ export default function ThreatDetection() {
         setBannedIPs(bannedIPsData.banned_ips || []);
 
         // Fetch SSH Logs (with 'all' type)
-        const sshLogsResponse = await fetch('http://localhost:5000/api/ssh/logs?type=all');
+        const sshLogsResponse = await fetch('http://57.129.78.111:5000/api/ssh/logs?type=all');
         if (!sshLogsResponse.ok) {
           throw new Error('Failed to fetch SSH logs');
         }

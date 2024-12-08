@@ -37,7 +37,7 @@ export default function ThreatsPage() {
   useEffect(() => {
     const fetchThreats = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/threats');
+        const response = await fetch('http://57.129.78.111:5000/api/threats');
         const data = await response.json();
         setThreats(data);
       } catch (error) {

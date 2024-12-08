@@ -1,13 +1,26 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, Response
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, Response, make_response
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 import sqlite3
 from config import *
 from logger import access_logger, api_logger, log_access, log_api_call
 from functools import wraps
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
+CORS(app, 
+    resources={
+        r"/*": {
+            "origins": ["*"],
+            "methods": ["GET", "POST", "OPTIONS"],
+            "allow_headers": ["Content-Type", "Authorization"],
+            "expose_headers": ["Content-Type"],
+            "supports_credentials": True,
+            "max_age": 3600
+        }
+    }
+)
 
 # Configuration de Flask-Login
 login_manager = LoginManager()
@@ -53,6 +66,14 @@ def log_response_info(response):
         f"Response: {response.status} - "
         f"Size: {response.content_length} bytes"
     )
+    return response
+
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,POST,OPTIONS')
+    response.headers.add('Access-Control-Allow-Credentials', 'true')
     return response
 
 def get_attacks(limit=100):
@@ -104,20 +125,40 @@ def dashboard():
     stats = get_attack_stats()
     return render_template('dashboard.html', attacks=attacks, stats=stats)
 
-@app.route('/login', methods=['GET', 'POST'])
-@log_request_response
+@app.route('/api/login', methods=['POST', 'OPTIONS'])
 def login():
+    if request.method == 'OPTIONS':
+        response = make_response()
+        response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+        response.headers.add('Access-Control-Allow-Methods', 'GET,POST,OPTIONS')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+        return response
+        
     if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
-        if username == "admin" and password == "secure_password":
+        data = request.get_json()
+        username = data.get('username')
+        password = data.get('password')
+        
+        # Add your authentication logic here
+        if username == "admin" and password == "admin":  # Replace with your actual authentication
             user = User(username)
             login_user(user)
-            access_logger.info(f"Successful login for user: {username}")
-            return redirect(url_for('dashboard'))
-        access_logger.warning(f"Failed login attempt for user: {username}")
-        flash('Invalid credentials')
-    return render_template('login.html')
+            response = make_response(jsonify({
+                "status": "success",
+                "message": "Login successful",
+                "user": {"username": username}
+            }))
+            return response
+        else:
+            return jsonify({
+                "status": "error",
+                "message": "Invalid credentials"
+            }), 401
+
+@app.route('/error')
+def error_page():
+    return "An error occurred while trying to load the external page. Please try again later."
 
 @app.route('/logout')
 @login_required
@@ -174,4 +215,4 @@ def view_logs():
 if __name__ == '__main__':
     # Créer le dossier logs s'il n'existe pas
     os.makedirs('logs', exist_ok=True)
-    app.run(host='0.0.0.0', port=WEB_PORT)
+    app.run(host='0.0.0.0', port=6000)
